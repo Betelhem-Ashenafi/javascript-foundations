@@ -18,7 +18,7 @@ while (guess !== secret) {
 
 
 // Simple CLI To-Do List App
-
+const prompt = require('prompt-sync')();
 
 let todos = [];
 let running = true;
