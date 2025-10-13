@@ -62,3 +62,27 @@ while (running) {
     console.log("Invalid option! Please choose 1-4.");
   }
 }
+let students = [
+  { name: "Betelhem", age: 21 },
+  { name: "Abel", age: 19 },
+  { name: "Sara", age: 22 }
+];
+
+// Get just the names
+let names = students.map(function(student) {
+  return student.name;
+});
+console.log(names); // ["Betelhem", "Abel", "Sara"]
+
+// Find students older than 20
+let olderStudents = students.filter(function(student) {
+  return student.age > 20;
+});
+console.log(olderStudents);
+// [{ name: "Betelhem", age: 21 }, { name: "Sara", age: 22 }]
+
+// Get the total age
+let totalAge = students.reduce(function(acc, student) {
+  return acc + student.age;
+}, 0);
+console.log(totalAge); // 62
