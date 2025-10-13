@@ -12,10 +12,3 @@ let adults = ages.filter(function(age) {
   return age >= 18;
 });
 console.log(adults); // [19, 21]
-let nums = [5, 10, 15];
-
-// Add up all numbers
-let total = nums.reduce(function(acc, curr) {
-  return acc + curr;
-}, 0);
-console.log(total); // 30
